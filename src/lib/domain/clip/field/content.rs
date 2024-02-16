@@ -1,6 +1,6 @@
 use crate::domain::clip::ClipError;
 
-use super::ClipError;
+//use crate::domain::clip::ClipError;
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Deserialize, Serialize)]
