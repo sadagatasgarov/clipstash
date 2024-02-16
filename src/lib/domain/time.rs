@@ -15,7 +15,7 @@ impl Time {
         self.0.timestamp()
     }
 
-    pub fn from_naive_utc(datetime:NaiveDateTime) -> Self {
+    pub fn from_naive_utc(datetime: NaiveDateTime) -> Self {
         Time(DateTime::from_naive_utc_and_offset(datetime, Utc))
     }
 }
@@ -25,8 +25,8 @@ impl FromStr for Time {
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         //2022-05-22
         match format!("{}T00:00:00Z", s).parse::<DateTime<Utc>>() {
-             Ok(time) => Ok(time.into()),
-             Err(e) => Err(e)
+            Ok(time) => Ok(time.into()),
+            Err(e) => Err(e),
         }
     }
 }

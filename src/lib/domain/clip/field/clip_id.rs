@@ -15,4 +15,3 @@ impl Default for ClipId {
         Self(DbId::nil())
     }
 }
-
