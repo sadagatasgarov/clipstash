@@ -1,7 +1,7 @@
 //use crate::data::model::Clip;
 use crate::data::{query, Transaction, DatabasePool};
 use crate::service::ask;
-use crate::{ShortCode, service::ServiceError, domain::Clip};
+use crate::{ShortCode, ServiceError, Clip};
 use std::convert::TryInto;
 
 pub async fn get_clip(req: ask::GetClip, pool: &DatabasePool)

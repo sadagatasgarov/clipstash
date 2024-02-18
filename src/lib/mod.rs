@@ -5,8 +5,8 @@ pub mod web;
 
 pub use data::DataError;
 pub use domain::clip::field::ShortCode;
-pub use domain::clip::ClipError;
+pub use domain::clip::{ClipError, Clip};
 pub use domain::time::Time;
+pub use service::ServiceError;
 
-
-//202-03.35
+//203-0.01
